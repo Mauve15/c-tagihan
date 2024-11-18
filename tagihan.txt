@@ -1,0 +1,279 @@
+//COPY AND PASTE CODE DIBAWAH INI
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    string nama,kodeTarif;
+    int jumPakai,tagihan,bayar,total;
+
+    
+    cout<<"==================================================="<<endl;
+    cout<<"No. Jenis Pelanggan                  | Kode Tarif |"<<endl;
+    cout<<"==================================================="<<endl;
+	cout<<" 1. Sosial Umum                      |	  1A      |"<<endl;
+	cout<<" 2. Sosial Khusus                    |	  1B      |"<<endl;
+	cout<<" 3. Rumah Tangga Sangat Sederhana    |	  1C      |"<<endl;
+	cout<<" 4. Rumah Tangga Sederhana           |	  2A      |"<<endl;
+	cout<<" 5. Rumah Tangga Menengah            |	  2B      |"<<endl;
+	cout<<" 6. Instansi Pemerintah              |	  2C      |"<<endl;
+	cout<<" 7. Rumah Tangga Mewah               |	  3A      |"<<endl;
+	cout<<" 8. Niaga Kecil                      |	  3B      |"<<endl;
+	cout<<" 9. Industri Kecil                   |	  3C      |"<<endl;
+	cout<<" 10. Niaga Besar                     |	  3D      |"<<endl;
+	cout<<" 11. Industri Besar                  |	  3E      |"<<endl;
+	cout<<" 12. Rumah Susun Pemerintah          |	  3F      |"<<endl;
+	cout<<" 13. PDAM/PEMDA                      |	  3G      |"<<endl;
+	cout<<" 14. Apartemen Sederhana             |	  3H      |"<<endl;
+	cout<<" 15. Apartemen Menengah              |	  3I      |"<<endl;
+	cout<<" 16. Apartemen Mewah                 |	  3J      |"<<endl;
+	cout<<" 17. Mall                            |	  3K      |"<<endl;
+	cout<<"==================================================="<<endl;
+    cout << "Nama : ";
+    cin >> nama;
+	cout << "Kode Tarif : ";
+    cin >> kodeTarif;
+    cout << "Jumlah Pemakaian (dalam meter kubik) : ";
+    cin >> jumPakai;
+//==================================
+    //untuk 1A
+	if (kodeTarif == "1A") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 2014;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 2014;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 2014;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 2014;
+		}
+	}
+//==================================
+    //untuk 1B
+	if (kodeTarif == "1B") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 2756;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 3180;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 5936;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 6890;
+		}
+	}
+//==================================
+    //untuk 1C
+	if (kodeTarif == "1C") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 2756;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 2968;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 5512;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 6466;
+		}
+	}
+//==================================
+    //untuk 2A
+	if (kodeTarif == "2A") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 4134;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 6042;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 6784;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 7102;
+		}
+	}
+//==================================
+//	untuk 2B
+	if (kodeTarif == "2B") {
+		if (jumPakai <= 10) {
+			tagihan = jumPakai * 6360;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 7738;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 8586;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 8904;
+		}
+	}
+//==================================
+//	untuk 2C
+	if (kodeTarif == "2C") {
+		if (jumPakai <= 10) {
+			tagihan = jumPakai * 7208;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 7738;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 8374;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 9222;
+		}
+	}
+//==================================
+    //untuk 3A
+	if (kodeTarif == "3A") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 7208;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 8374;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 9328;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 10070;
+		}
+	}
+//==================================
+    //untuk 3B
+	if (kodeTarif == "3B") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 7314;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 8798;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 9434;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 10176;
+		}
+	}
+//==================================
+    //untuk 3C
+	if (kodeTarif == "3C") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 7420;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 8904;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 9646;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 11130;
+		}
+	}
+//==================================
+    //untuk 3D
+	if (kodeTarif == "3D") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 9010;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 10388;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 11766;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 12720;
+		}
+	}
+//==================================
+    //untuk 3E
+	if (kodeTarif == "3E") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 10388;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 12349;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 13038;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 14628;
+		}
+	}
+//==================================
+    //untuk 3F
+	if (kodeTarif == "3F") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 6360;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 6360;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 6360;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 6360;
+		}
+	}
+//==================================
+    //untuk 3G
+	if (kodeTarif == "3G") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 7950;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 7950;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 7950;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 7950;
+		}
+	}
+//==================================
+    //untuk 3H
+	if (kodeTarif == "3H") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 8480;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 8480;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 8480;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 8480;
+		}
+	}
+//==================================
+    //untuk 3H
+	if (kodeTarif == "3I") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 10600;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 10600;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 10600;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 10600;
+		}
+	}
+//==================================
+    //untuk 3J
+	if (kodeTarif == "3J") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 13780;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 13780;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 13780;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 13780;
+		}
+	}
+//==================================
+    //untuk 3K
+	if (kodeTarif == "3K") {
+    	if(jumPakai <= 10) {
+			tagihan=jumPakai * 11660;
+		} else if (jumPakai <= 20) {
+			tagihan=jumPakai * 11660;
+		} else if (jumPakai <= 30 ) {
+			tagihan=jumPakai * 11660;
+		} else if (jumPakai >30) {
+			tagihan=jumPakai * 11660;
+		}
+		cout<<"Jenis Pelanggan : Mall"<<endl;
+	}
+
+	cout<<"Total Tagihan Sebesar Rp. "<<tagihan<<endl;
+	cout<<"Bayar : ";
+	cin>>bayar;
+	total=bayar-tagihan;
+	cout<<"Kembali : Rp. "<<total<<endl;
+	cout<<"=========================================="<<endl;
+	cout<<"---------- Struk Pembayaran Air ----------"<<endl;
+	cout<<"=========================================="<<endl;
+	cout<<"Nama :             | "<<nama<<endl;
+	cout<<"Kode Tarif :       | "<<kodeTarif<<endl;
+	cout<<"Jumlah Pemakaian : | "<<jumPakai<<endl;
+	cout<<"Total Tagihan :    | Rp. "<<tagihan<<endl;
+	cout<<"Bayar :            | Rp. "<<bayar<<endl;
+	cout<<"Kembali :          | Rp. "<<total<<endl;
+	cout<<"=========================================="<<endl;
+	cout<<"Simpan Struk Anda Sebagai Bukti Pembayaran"<<endl;
+	cout<<"              Terima Kasih";
+}
